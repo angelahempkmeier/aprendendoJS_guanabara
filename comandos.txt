@@ -1,0 +1,21 @@
+- window.alert(''); -> mensagem numa caixa na tela (window pode ser omitido e escrever apenas alert('');)
+- windor.confirme(''); -> janela de confirmacao, bem similar ao alert achei
+- window.prompt(''); -> janela pedindo pra digitar algo
+- var nome = window.prompt('Qual é o seu nome?'); - > variavel nome recebe tudo que foi escrito dentro de prompt
+- window.alert('É um grande prazer te conhecer, ' + nome); -> + é simbolo de concatenacao
+- Number.parseInt(n) > converte pra inteiro
+- Number.parseFloat(n) > converte pra parseFloat
+-Number(n) > se vira sozinho e faz a conversao, mas é o js que decide. entao se quiser forçar inteiro ou float, usar as formas especificas
+- window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); > template strings com place holder pra juntar elementos
+- s.length > diz o tamanho da string
+- s.toUpperCase() - maius
+- s.toLowerCase() - minusc
+- document.write(`Seu nome tem ${nome.length} letras`) - write é comando pra escrever
+- window.document.write(window.document.URL) > mostra a url do site que to usando
+- getElementByTagName()[] > seleciona o elemento por marca, dentro dos colchetes o numero do elemento, se for o primeiro é 0, se for o segundo é 1 e assim por diante
+- window.document.write(p1.innerText) > escreve na tela o que tem no conteudo p1
+    - innerText pega o texto
+    - innerHTML pega a formatacao tambem
+- p1.style.color = 'blue'
+- window.document.getElementById('msg') - pega elemento pela ID, nao precisa de [] porque é Element nao ElementS
+
