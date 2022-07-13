@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou Estrangeiro</title>
+</head>
+<body>
+    <h3>Qual a sua nacionalidade?</h3>
+    Digite o seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div class="nac">Você é: </div>
+
+    <script>
+        function verificar(){
+        let origem = window.document.getElementById('pais').value
+        origem = origem.toUpperCase()
+        var p = window.document.querySelector('div.nac')
+        if(origem == "BRASIL") {
+            p.innerHTML += 'Brasileiro'
+        }else {
+            p.innerHTML += 'Estrangeiro'
+        }
+        
+    }
+
+    </script>
+
+</body>
+</html>
